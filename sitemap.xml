@@ -80,6 +80,20 @@
   </url>
 
   
+  <url>
+    <loc>https://yaowux.github.io/tags/hexo/</loc>
+    <lastmod>2021-01-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://yaowux.github.io/categories/hexo/</loc>
+    <lastmod>2021-01-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
