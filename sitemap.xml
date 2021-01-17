@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yaowux.github.io/about/index.html</loc>
+    
+    <lastmod>2021-01-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yaowux.github.io/tags/index.html</loc>
+    
+    <lastmod>2021-01-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yaowux.github.io/categories/index.html</loc>
+    
+    <lastmod>2021-01-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yaowux.github.io/archives/index.html</loc>
+    
+    <lastmod>2021-01-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yaowux.github.io/2021/01/17/hello-world/</loc>
     
     <lastmod>2021-01-17</lastmod>
