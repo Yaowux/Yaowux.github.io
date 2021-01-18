@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>图像基本操作</title>
+      <link href="2021/01/18/%E5%9B%BE%E5%83%8F%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+      <url>2021/01/18/%E5%9B%BE%E5%83%8F%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h3 id="图像基本操作"><a href="#图像基本操作" class="headerlink" title="图像基本操作"></a>图像基本操作</h3><h4 id="图片读取"><a href="#图片读取" class="headerlink" title="图片读取"></a>图片读取</h4><p>注意：opencv中的像素点排序为BGR</p><pre><code class="python">img = cv2.imread(path,属性)  # 可加入其他参数， 从cv.IMREAD_GRAYSCALE:灰度图，CV2.IMREAD_COLOR：彩图；默认为彩图print(img)print(img.shape)      # 打印图像数组形状print(type(img))      # 数组类型cv2.imshow(&#39;image&#39;, img)cv2.waitKey(0)         #等待终止显示时间，0表示按任意键终止cv2.destroyAllWindows() </code></pre><h4 id="视频读取"><a href="#视频读取" class="headerlink" title="视频读取"></a>视频读取</h4><pre><code class="python"># 视频读取import cv2v = cv2.VideoCapture(path)# 检查是否能打开if v.isOpened():    open, frame = v.read()else:    open = Falsewhile open:    ret, frame = v.read()    if frame is None:       # 是否读取完        break    if ret == True:     #读取是否成功        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)    # 转化为灰度图        cv2.imshow(&#39;video&#39;, gray)        if cv2.waitKey(50) &amp; 0xFF ==  27:  # 27表示按Esc退出显示            breakv.release()cv2.destroyAllWindows()</code></pre><h4 id="图像截取"><a href="#图像截取" class="headerlink" title="图像截取"></a>图像截取</h4><pre><code class="python">img[0:100, 0:100] # 选择图像像素大小</code></pre><h4 id="提取颜色通道"><a href="#提取颜色通道" class="headerlink" title="提取颜色通道"></a>提取颜色通道</h4><pre><code class="python">b,g,r=cv2.split(img)  # 三通道提取img = cv2.merge((b,g,r)) # 合并三通道# 只保留b通道img[:,:,1]=0img[:,:,2]=0</code></pre><h4 id="边界填充"><a href="#边界填充" class="headerlink" title="边界填充"></a>边界填充</h4><ul><li>copyMakeBorder(img, top, bottom, left, right, bordertype)，常量填充要加value值</li><li>bordertype可选：<ul><li>BORDER_REPLICATE：复制法，复制最边缘像素。</li><li>BORDER_REFLECT：反射法，对图像中的像素在两边进行复制例如：fedcba|abcdefgh|hgfedcb</li><li>BORDER_REFLECT_101：反射法，也就是以最边缘像素为轴，对称。</li><li>BORDER_WRAP：外包装法cdefgh|abcdefgh|abcdefg</li><li>BORDER_CONSTANT：常量法，常数值填充。</li></ul></li></ul><h4 id="数值计算"><a href="#数值计算" class="headerlink" title="数值计算"></a>数值计算</h4><pre><code>img1+img2     # 对应像素点相加，%256；注意图像大小要相等cv2.add(img1+img2)  # 超过255则取255img = cv2.addWeighted(img1,0.5, img2, 0.5,0)  # 按比例融合两张图片</code></pre><h4 id="改变图片大小"><a href="#改变图片大小" class="headerlink" title="改变图片大小"></a>改变图片大小</h4><pre><code>resize(img,(x,y)) #注意图片大小是（y,x,c)resize(img,(0,0), fx=2, fy=1) # x与y的比例</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> opencv </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 图像处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo设置</title>
       <link href="2021/01/17/hexo%E8%AE%BE%E7%BD%AE/"/>
       <url>2021/01/17/hexo%E8%AE%BE%E7%BD%AE/</url>

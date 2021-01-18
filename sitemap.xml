@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yaowux.github.io/2021/01/18/%E5%9B%BE%E5%83%8F%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
+    
+    <lastmod>2021-01-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yaowux.github.io/archives/index.html</loc>
     
     <lastmod>2021-01-17</lastmod>
@@ -67,7 +74,7 @@
 
   <url>
     <loc>https://yaowux.github.io/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,7 +82,14 @@
   
   <url>
     <loc>https://yaowux.github.io/tags/hexo/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-01-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaowux.github.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -84,7 +98,14 @@
   
   <url>
     <loc>https://yaowux.github.io/categories/hexo/</loc>
-    <lastmod>2021-01-17</lastmod>
+    <lastmod>2021-01-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaowux.github.io/categories/opencv/</loc>
+    <lastmod>2021-01-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
